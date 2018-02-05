@@ -77,7 +77,8 @@ import {UserGuard} from './guards/user.guard'
 import {IdenticonDirective} from './directives/identicon.directive'
 //PIPES
 import {InitCapPipe} from './pipes/init-cap.pipe'
-import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe'
+import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
+import { ProjectSettingsComponent } from './components/project-settings/project-settings.component'
 
 export function init(startupService: StartupService) {
   return () => startupService.init()
@@ -108,7 +109,8 @@ export function init(startupService: StartupService) {
     IdenticonDirective,
     InitCapPipe,
     SanitizeHtmlPipe,
-    ProgressBarModalComponent
+    ProgressBarModalComponent,
+    ProjectSettingsComponent
   ],
   imports: [
     AppRoutingModule,
